@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "node --env-file=.env src/index.ts",
+    "dev2": "node --env-file=.env src/test-sum/main.ts",
     "test": "vitest run",
+    "claude:ln": "ln -s AGENTS.md CLAUDE.md",
+    "gemini:ln": "ln -s AGENTS.md GEMINI.md",
     "devtools": "pnpx @ai-sdk/devtools"
   },
   "keywords": [],
@@ -16,7 +19,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "3.3.3",
     "@eslint/js": "9.39.1",
-    "@types/node": "^25.0.7",
+    "@types/node": "^25.1.0",
     "autoevals": "^0.0.131",
     "eslint": "9.39.1",
     "eslint-config-prettier": "10.1.8",
