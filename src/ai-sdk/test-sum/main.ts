@@ -41,7 +41,8 @@ async function main(): Promise<string> {
   if (my_url.includes("news.ycombinator.com")) {
     console.log("Using special prompt for Hacker News...");
     summarizer = streamText({
-      model: "gpt-4o-mini",
+      // model: "gpt-4o-mini",
+      model: "openai/gpt-5-nano",
       tools,
       prompt: `Summarize the top 3 articles from Hacker News at the given URL.
 ${commonPrompt}

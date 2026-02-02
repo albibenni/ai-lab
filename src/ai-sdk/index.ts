@@ -1,3 +1,4 @@
+import "../env/config.ts";
 import { test_embedding } from "./basic/embedding.ts";
 import { main_eval } from "./basic/eval.ts";
 
